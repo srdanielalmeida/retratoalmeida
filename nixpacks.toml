@@ -1,0 +1,8 @@
+[providers.node]
+nodeVersion = "22.14.0"
+
+[phases.build]
+cmds = ["npm install", "npm run build"]
+
+[phases.start]
+cmds = ["npm run start"]
