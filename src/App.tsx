@@ -292,10 +292,10 @@ function App() {
           </div>
 
           <blockquote className="philosophy__quote reveal">
-            "Um retrato não captura o momento — ele <span>revela quem você é</span> quando ninguém está olhando."
+            "Um bom retrato é uma biografia pintada."
           </blockquote>
 
-          <p className="philosophy__attribution reveal reveal-delay-1">— Retrato Almeida</p>
+          <p className="philosophy__attribution reveal reveal-delay-1">— Anatole France</p>
 
           <div className="arabesque-divider reveal reveal-delay-2">
             <svg viewBox="0 0 280 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -389,7 +389,7 @@ function App() {
 
         <div className="about__grid">
           <div className="about__image-wrapper reveal">
-            <img src="/images/galeria/minha-irma-e-eu.jpg?v=2" alt="Daniel e Aniny — Fundadores do Retrato Almeida" className="about__image" loading="lazy" />
+            <img src="/images/galeria/web/minha-irma-e-eu.webp?v=3" alt="Daniel e Aniny — Fundadores do Retrato Almeida" className="about__image" loading="lazy" />
           </div>
 
           <div className="about__content reveal reveal-delay-1">
@@ -407,12 +407,12 @@ function App() {
 
             <div className="about__names">
               <div className="about__name">
-                <img src="/images/galeria/eu.jpg?v=2" alt="Daniel Almeida" className="about__name-photo" loading="lazy" />
+                <img src="/images/galeria/web/eu.webp?v=3" alt="Daniel Almeida" className="about__name-photo" loading="lazy" />
                 <h4>Daniel</h4>
                 <p>Fotógrafo & Diretor</p>
               </div>
               <div className="about__name">
-                <img src="/images/galeria/minha-irma.jpg?v=2" alt="Aniny Almeida — Co-fundadora" className="about__name-photo" loading="lazy" />
+                <img src="/images/galeria/web/minha-irma.webp?v=3" alt="Aniny Almeida — Co-fundadora" className="about__name-photo" loading="lazy" />
                 <h4>Aniny</h4>
                 <p>Co-fundadora & Produção</p>
               </div>
