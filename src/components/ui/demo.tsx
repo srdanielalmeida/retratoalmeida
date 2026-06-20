@@ -3,6 +3,7 @@
 import { Suspense, lazy, useState, useEffect } from "react"
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls } from "@react-three/drei"
+import { ErrorBoundary } from "./ErrorBoundary"
 
 const ParticleSphereComponent = lazy(() =>
   import("@/components/ui/3d-orbit-gallery").then((mod) => ({
@@ -46,32 +47,34 @@ export default function OrbitGallerySection() {
 
   return (
     <div className="w-full h-full">
-      <Canvas 
-        camera={{ position: [-8, 2, 8], fov: isMobile ? 65 : 55 }}
-        dpr={isMobile ? [1, 1] : [1, 1.5]}
-        performance={{ min: 0.5 }}
-        gl={{ antialias: !isMobile, powerPreference: "high-performance" }}
-      >
-        <ambientLight intensity={0.65} />
-        <directionalLight position={[10, 15, 10]} intensity={1.2} castShadow={false} />
-        <directionalLight position={[-10, -5, -10]} intensity={0.4} />
-        <Suspense fallback={<LoadingFallback />}>
-          <ParticleSphereComponent 
-            images={GALLERY_IMAGES_THUMBS} 
-            particleCount={isMobile ? 300 : 600}
-            sphereRadius={isMobile ? 6 : 7}
-            imageSize={isMobile ? 1.6 : 2}
+      <ErrorBoundary>
+        <Canvas 
+          camera={{ position: [-8, 2, 8], fov: isMobile ? 65 : 55 }}
+          dpr={isMobile ? [1, 1] : [1, 1.5]}
+          performance={{ min: 0.5 }}
+          gl={{ antialias: !isMobile, powerPreference: "high-performance" }}
+        >
+          <ambientLight intensity={0.65} />
+          <directionalLight position={[10, 15, 10]} intensity={1.2} castShadow={false} />
+          <directionalLight position={[-10, -5, -10]} intensity={0.4} />
+          <Suspense fallback={<LoadingFallback />}>
+            <ParticleSphereComponent 
+              images={GALLERY_IMAGES_THUMBS} 
+              particleCount={isMobile ? 300 : 600}
+              sphereRadius={isMobile ? 6 : 7}
+              imageSize={isMobile ? 1.6 : 2}
+            />
+          </Suspense>
+          <OrbitControls 
+            enablePan={false} 
+            enableZoom={false} 
+            enableRotate={true}
+            autoRotate
+            autoRotateSpeed={0.5}
+            rotateSpeed={0.5}
           />
-        </Suspense>
-        <OrbitControls 
-          enablePan={false} 
-          enableZoom={false} 
-          enableRotate={true}
-          autoRotate
-          autoRotateSpeed={0.5}
-          rotateSpeed={0.5}
-        />
-      </Canvas>
+        </Canvas>
+      </ErrorBoundary>
     </div>
   )
 }
