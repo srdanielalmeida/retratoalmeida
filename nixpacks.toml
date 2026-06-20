@@ -1,5 +1,10 @@
-[providers.node]
-nodeVersion = "22.14.0"
+providers = ["node"]
+
+[variables]
+NIXPACKS_NODE_VERSION = "23"
+
+[phases.setup]
+nixPkgs = ["nodejs_23"]
 
 [phases.build]
 cmds = ["npm install", "npm run build"]
