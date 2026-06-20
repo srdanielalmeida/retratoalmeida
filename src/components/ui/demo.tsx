@@ -12,14 +12,14 @@ const ParticleSphereComponent = lazy(() =>
 )
 
 const GALLERY_IMAGES_THUMBS = [
-  "images/galeria/thumbs/_MG_1329.jpg",
-  "images/galeria/thumbs/_MG_1493.jpg",
-  "images/galeria/thumbs/_MG_3967-Edit.jpg",
-  "images/galeria/thumbs/_MG_6579.jpg",
-  "images/galeria/thumbs/Sem-Título-4.jpg",
-  "images/galeria/thumbs/_MG_8815.jpg",
-  "images/galeria/thumbs/_MG_9784.jpg",
-  "images/galeria/thumbs/IMG_20230319_232434_655.jpg",
+  "/images/galeria/thumbs/_MG_1329.jpg?v=2",
+  "/images/galeria/thumbs/_MG_1493.jpg?v=2",
+  "/images/galeria/thumbs/_MG_3967-Edit.jpg?v=2",
+  "/images/galeria/thumbs/_MG_6579.jpg?v=2",
+  "/images/galeria/thumbs/Sem-Título-4.jpg?v=2",
+  "/images/galeria/thumbs/_MG_8815.jpg?v=2",
+  "/images/galeria/thumbs/_MG_9784.jpg?v=2",
+  "/images/galeria/thumbs/IMG_20230319_232434_655.jpg?v=2",
 ]
 
 function LoadingFallback() {

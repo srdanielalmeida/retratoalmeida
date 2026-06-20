@@ -3,14 +3,14 @@ import OrbitGallerySection from "./components/ui/demo"
 
 // Gallery images array pointing to optimized web WebP images
 const GALLERY_IMAGES = [
-  "images/galeria/web/_MG_1329.webp",
-  "images/galeria/web/_MG_1493.webp",
-  "images/galeria/web/_MG_3967-Edit.webp",
-  "images/galeria/web/_MG_6579.webp",
-  "images/galeria/web/Sem-Título-4.webp",
-  "images/galeria/web/_MG_8815.webp",
-  "images/galeria/web/_MG_9784.webp",
-  "images/galeria/web/IMG_20230319_232434_655.webp"
+  "/images/galeria/web/_MG_1329.webp?v=2",
+  "/images/galeria/web/_MG_1493.webp?v=2",
+  "/images/galeria/web/_MG_3967-Edit.webp?v=2",
+  "/images/galeria/web/_MG_6579.webp?v=2",
+  "/images/galeria/web/Sem-Título-4.webp?v=2",
+  "/images/galeria/web/_MG_8815.webp?v=2",
+  "/images/galeria/web/_MG_9784.webp?v=2",
+  "/images/galeria/web/IMG_20230319_232434_655.webp?v=2"
 ]
 
 const GALLERY_ALTS = [
@@ -241,7 +241,7 @@ function App() {
       {/* ======== HERO ======== */}
       <section className="hero" id="hero">
         <div className="hero__bg">
-          <img src="images/capa/5024113740995473410_121.jpg" alt="Retrato artístico — Retrato Almeida" loading="eager" />
+          <img src="/images/capa/5024113740995473410_121.jpg?v=2" alt="Retrato artístico — Retrato Almeida" loading="eager" />
         </div>
         <div className="hero__overlay"></div>
 
@@ -389,7 +389,7 @@ function App() {
 
         <div className="about__grid">
           <div className="about__image-wrapper reveal">
-            <img src="images/galeria/minha-irma-e-eu.jpg" alt="Daniel e Aniny — Fundadores do Retrato Almeida" className="about__image" loading="lazy" />
+            <img src="/images/galeria/minha-irma-e-eu.jpg?v=2" alt="Daniel e Aniny — Fundadores do Retrato Almeida" className="about__image" loading="lazy" />
           </div>
 
           <div className="about__content reveal reveal-delay-1">
@@ -407,12 +407,12 @@ function App() {
 
             <div className="about__names">
               <div className="about__name">
-                <img src="images/galeria/eu.jpg" alt="Daniel Almeida" className="about__name-photo" loading="lazy" />
+                <img src="/images/galeria/eu.jpg?v=2" alt="Daniel Almeida" className="about__name-photo" loading="lazy" />
                 <h4>Daniel</h4>
                 <p>Fotógrafo & Diretor</p>
               </div>
               <div className="about__name">
-                <img src="images/galeria/minha-irma.jpg" alt="Aniny Almeida — Co-fundadora" className="about__name-photo" loading="lazy" />
+                <img src="/images/galeria/minha-irma.jpg?v=2" alt="Aniny Almeida — Co-fundadora" className="about__name-photo" loading="lazy" />
                 <h4>Aniny</h4>
                 <p>Co-fundadora & Produção</p>
               </div>
