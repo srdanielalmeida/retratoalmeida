@@ -254,7 +254,7 @@ function App() {
 
           <div className="hero__divider"></div>
 
-          <p className="hero__subtitle">Não o momento. O caráter.</p>
+          <p className="hero__subtitle">Revelando a sua verdadeira essência, além do momento.</p>
 
           <a 
             href="https://wa.me/5594991471792?text=Ol%C3%A1.%20Gostaria%20de%20conhecer%20os%20pacotes%20para%20sess%C3%B5es%20de%20retrato." 
